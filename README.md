@@ -2,6 +2,8 @@
 
 This is a solution to the [Interactive card details form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw).
 
+### LIVE DEMO: [https://interactive-credit-card-form-project.vercel.app/](https://interactive-credit-card-form-project.vercel.app/)
+
 ### The challenge
 
 Users are able to:
@@ -14,10 +16,6 @@ Users are able to:
   - The expiry date is expired
 - View the optimal layout depending on their device's screen size
 - See hover, active, and focus states for interactive elements on the page
-
-### Links
-
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
