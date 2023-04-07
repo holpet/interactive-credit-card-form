@@ -47,6 +47,7 @@ const CardHolder = ({
         placeholder="e.g. Jane Appleseed"
         value={name}
         name="name"
+        id="name"
         onChange={(e) => handleOnChange(e)}
       />
       <Errors

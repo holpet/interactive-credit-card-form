@@ -48,7 +48,7 @@ const CardFront = ({ setIsLoaded }: ICardsProps) => {
         alt="Image that shows card details from the front."
         onLoad={() => setIsLoaded(true)}
       />
-      <img src={card_logo} />
+      <img src={card_logo} alt="card logo" />
       <span>{numToShow}</span>
       <div>
         <span>{nameToShow}</span>

@@ -77,6 +77,7 @@ const CardDate = ({
           placeholder="MM"
           value={MM}
           name="MM"
+          id="date"
           onChange={(e) => handleOnChange(e, "MM")}
         />
         <input

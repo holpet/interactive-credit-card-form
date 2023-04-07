@@ -75,6 +75,7 @@ const CardNumber = ({
         type="text"
         value={num}
         name="number"
+        id="number"
         onChange={(e) => handleOnChange(e)}
       />
       <Errors

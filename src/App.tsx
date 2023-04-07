@@ -31,13 +31,13 @@ function App() {
       <div className="App">
         <main>
           {/* CARDS SECTION */}
-          <section className="card-wrapper" ref={ref}>
+          <div className="card-wrapper" ref={ref}>
             <Cards setIsLoaded={setIsLoaded} />
-          </section>
+          </div>
           {/* FORM SECTION */}
-          <section className="form-wrapper">
+          <div className="form-wrapper">
             {!success ? <Form setSuccess={setSuccess} /> : <Completed />}
-          </section>
+          </div>
         </main>
         <Footer />
       </div>
