@@ -1,0 +1,77 @@
+@use '../../sharedStyles';
+
+form {
+  @extend %grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "name name" "number number" "date cvc" "button button";
+}
+
+form fieldset {
+  display: block;
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+form fieldset > label {
+  display: block;
+  margin-bottom: 0.4rem;
+  white-space: nowrap;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--primary-black);
+}
+
+form fieldset input {
+  @extend %generic-field-for-input-button;
+  border-color: var(--light-gray);
+  font-size: 1.2rem;
+}
+form fieldset input:focus {
+  border-color: var(--dark-purple);
+}
+form fieldset input.error {
+  border-color: var(--error-color) !important;
+}
+*::placeholder {
+  color: var(--light-gray);
+  opacity: 1;
+}
+
+/* Error messages */
+form p {
+  color: var(--error-color);
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+}
+
+/* Cardholder Name */
+form fieldset.name {
+  grid-area: name;
+}
+
+/* Card Number */
+form fieldset.number {
+  grid-area: number;
+}
+
+/* Card Exp. Date */
+form fieldset.date {
+  grid-area: date;
+}
+form fieldset.date > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Card CVC */
+form fieldset.cvc {
+  grid-area: cvc;
+}
+
+/* Confirm button */
+form div:nth-child(5) {
+  grid-area: button;
+}

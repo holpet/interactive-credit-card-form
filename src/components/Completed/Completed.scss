@@ -1,0 +1,17 @@
+@use '../../sharedStyles';
+
+.completed-wrapper {
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  letter-spacing: 0.2rem;
+  margin-top: 2rem;
+}
+
+.completed-wrapper p {
+  color: var(--dark-gray);
+  margin-bottom: 2rem;
+}

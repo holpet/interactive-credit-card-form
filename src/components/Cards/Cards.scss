@@ -1,0 +1,94 @@
+.cards div {
+  width: 100%;
+  margin: 2% auto;
+  text-transform: uppercase;
+}
+
+/* FRONT CARD */
+.cards div.front {
+  position: relative;
+  margin-left: 0;
+  padding-bottom: 5%;
+  color: var(--primary-white) !important;
+}
+.cards div.front > img:nth-child(2),
+.cards div.front > span,
+.cards div.front > div {
+  position: absolute;
+  padding: 6%;
+  left: 0;
+}
+.cards div.front > img:nth-child(2) {
+  width: 30%;
+}
+.cards div.front > span {
+  top: 45%;
+  font-size: min(2.7vw, 2rem);
+  letter-spacing: 0.08rem;
+}
+.cards div.front > div {
+  top: 62%;
+  width: 100%;
+  font-size: min(1.2vw, 0.7rem);
+  color: var(--primary-white) !important;
+  letter-spacing: 0.08rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* BACK CARD */
+.cards div.back {
+  position: relative;
+  margin-top: 0;
+  margin-right: 0;
+  left: 6vw;
+  color: var(--primary-white) !important;
+}
+.cards div.back > span {
+  position: absolute;
+  padding: 6%;
+  left: 75%;
+  top: 35%;
+  font-size: min(1.2vw, 0.7rem);
+  letter-spacing: 0.08rem;
+}
+
+.cards div img {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .cards div {
+    max-width: 80%;
+  }
+
+  /* FRONT CARD */
+  .cards div.front {
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: -21%;
+    padding-bottom: 0;
+  }
+  .cards div.front > span {
+    top: 48%;
+    font-size: 4.7vw;
+    letter-spacing: 0.5vw;
+  }
+  .cards div.front > div {
+    top: 67%;
+    font-size: min(1.9vw, 1.2rem);
+    max-width: 100%;
+  }
+
+  /* BACK CARD */
+  .cards div.back {
+    margin-right: 0;
+    margin-left: auto;
+    left: 0px;
+  }
+  .cards div.back > span {
+    left: 75%;
+    top: 34.5%;
+    font-size: min(1.9vw, 1.2rem);
+  }
+}
